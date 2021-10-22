@@ -184,7 +184,7 @@ const InvoiceProcessing = () => {
                 className="frmbtn2"
                 onClick={handleFileChange}
               >
-                Process
+                Confirm
               </button>
             </div>
           </div>
@@ -205,15 +205,22 @@ const InvoiceProcessing = () => {
             //onChange={(e) => { setInput(e.target.value); setcontentType("text/plain"); setfilename(""); setfolder(""); }}
             />
           </div>
-          <div>
+          <div><span>
             <button
               className="frmbtn2"
               onClick={handleClick}
             >
               Approve
             </button>
+            <button
+              className="frmbtn2"
+              onClick={handleClick}
+            >
+              Reject
+            </button>
+          </span>
           </div>
-
+          
         </Grid>
 
 
